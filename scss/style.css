@@ -146,6 +146,7 @@ header h1 {
   left: 0;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 .time-display::after {
@@ -184,13 +185,12 @@ header h1 {
 .bottom {
   bottom: 0;
   left: 0;
-  background: #343650;
+  background: rgba(52, 54, 80, 0);
 }
 
 .time {
   font-size: 5rem;
   color: #fb6087;
-  z-index: 1;
 }
 
 footer {

@@ -107,6 +107,7 @@ header h1 {
   top: 50%;
   left: 0;
   transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 .time-display::after {
@@ -142,13 +143,12 @@ header h1 {
 .bottom {
   bottom: 0;
   left: 0;
-  background: rgb(52, 54, 80);
+  background: rgba(52, 54, 80, 0);
 }
 
 .time {
   font-size: 5rem;
   color: hsl(345, 95%, 68%);
-  z-index: 1;
 }
 
 footer {
