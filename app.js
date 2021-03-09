@@ -1,4 +1,5 @@
 const times = document.querySelectorAll('.time')
+const bottomCard = document.querySelectorAll('.bottom')
 
 let currentTime = 777341
 
@@ -10,13 +11,17 @@ function getTime(seconds) {
 
   if (days < 10) {
     days = `0${days}`
-  } else if (hours < 10) {
+  }
+  if (hours < 10) {
     hours = `0${hours}`
-  } else if (minutes < 10) {
+  }
+  if (minutes < 10) {
     minutes = `0${minutes}`
-  } else if (sec < 10) {
+  }
+  if (sec < 10) {
     sec = `0${sec}`
   }
+
   return [days, hours, minutes, sec]
 }
 
@@ -34,5 +39,4 @@ setInterval(() => {
   updateTime()
 }, 1000)
 
-console.log(times)
 getTime(currentTime)
