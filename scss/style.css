@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Red Hat Text', sans-serif;
+  min-height: 100vh;
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e1f29), to(#2f2439));
+  background: linear-gradient(#1e1f29, #2f2439);
+  color: white;
+  z-index: 1;
+}
+
+.stars,
+.hills {
+  position: absolute;
+}
+
+.stars {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.hills {
+  width: 100%;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.hills {
+  bottom: 0;
+  left: 0;
+}
+
+header {
+  min-height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h1 {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 1.4rem;
+}
+
+.timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 30vh;
+  min-width: 700px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card p {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: #8486a9;
+}
+
+.time-display {
+  width: 150px;
+  height: 150px;
+  background: #343650;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 12px 5px #191a24;
+          box-shadow: 0px 12px 5px #191a24;
+}
+
+.time-display::before,
+.time-display::after {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #191a24;
+  border-radius: 50%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.time-display::after {
+  left: unset;
+  -webkit-transform: unset;
+          transform: unset;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.top,
+.bottom {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+}
+
+.top {
+  top: 0;
+  left: 0;
+  background: rgba(25, 26, 36, 0.25);
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 1px;
+  background: rgba(25, 26, 36, 0.3);
+  width: 100%;
+}
+
+.bottom {
+  bottom: 0;
+  left: 0;
+  background: rgba(52, 54, 80, 0);
+}
+
+.time {
+  font-size: 5rem;
+  color: #fb6087;
+}
+
+footer {
+  min-height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer img {
+  margin: 8rem 1rem 0;
+  cursor: pointer;
+}
+
+.attribution {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

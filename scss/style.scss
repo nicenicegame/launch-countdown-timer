@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Red Hat Text', sans-serif;
+  min-height: 100vh;
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(hsl(235, 16%, 14%), #2f2439);
+  color: white;
+  z-index: 1;
+}
+
+.stars,
+.hills {
+  position: absolute;
+}
+
+.stars {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hills {
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hills {
+  bottom: 0;
+  left: 0;
+}
+
+header {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 1.4rem;
+}
+
+.timer {
+  display: flex;
+  min-height: 30vh;
+  min-width: 700px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card p {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: hsl(237, 18%, 59%);
+}
+
+.time-display {
+  width: 150px;
+  height: 150px;
+  background: hsl(236, 21%, 26%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 12px 5px hsl(234, 17%, 12%);
+}
+
+.time-display::before,
+.time-display::after {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: hsl(234, 17%, 12%);
+  border-radius: 50%;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.time-display::after {
+  left: unset;
+  transform: unset;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.top,
+.bottom {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+}
+
+.top {
+  top: 0;
+  left: 0;
+  background: rgba(25, 26, 36, 0.25);
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  background: rgba(25, 26, 36, 0.3);
+  width: 100%;
+}
+
+.bottom {
+  bottom: 0;
+  left: 0;
+  background: rgba(52, 54, 80, 0);
+}
+
+.time {
+  font-size: 5rem;
+  color: hsl(345, 95%, 68%);
+}
+
+footer {
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  margin: 8rem 1rem 0;
+  cursor: pointer;
+}
+
+.attribution {
+  text-align: center;
+}
